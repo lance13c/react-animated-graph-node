@@ -6,7 +6,7 @@
 
 Beautiful, interactive animated graph nodes for React applications. Create dynamic network visualizations with smooth animations, hover effects, and responsive interactions.
 
-![Demo Animation](https://raw.githubusercontent.com/devfleet/react-animated-graph-node/main/.github/assets/demo.gif)
+![Demo Animation](https://raw.githubusercontent.com/lance13c/react-animated-graph-node/main/.github/assets/demo.gif)
 
 ## Features
 
