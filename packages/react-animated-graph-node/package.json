@@ -1,0 +1,78 @@
+{
+  "name": "@devfleet.io/react-animated-graph-node",
+  "version": "1.0.0",
+  "description": "Animated node and line graph component for React applications",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node scripts/build.js && npm run build:types",
+    "build:types": "tsc --project tsconfig.build.json",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "esbuild": "^0.19.2",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.1.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "animation",
+    "graph",
+    "node",
+    "line",
+    "network",
+    "visualization",
+    "canvas"
+  ],
+  "author": "Dominic Cicilio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lance13c/react-animated-graph-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lance13c/react-animated-graph-node/issues"
+  },
+  "homepage": "https://github.com/lance13c/react-animated-graph-node#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
