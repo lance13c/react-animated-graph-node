@@ -1,4 +1,4 @@
-import { AnimatedGraphProps } from '@devfleet/react-animated-graph-node';
+import { AnimatedGraphProps } from '@devfleet.io/react-animated-graph-node';
 
 export interface Example {
   id: string;

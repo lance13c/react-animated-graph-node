@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Example } from "@/lib/example-configs";
-import AnimatedGraphNodes from "@devfleet/react-animated-graph-node";
+import AnimatedGraphNodes from "@devfleet.io/react-animated-graph-node";
 import { ChevronLeft, Code, Copy, X } from "lucide-react";
 import React, { useState } from 'react';
 
