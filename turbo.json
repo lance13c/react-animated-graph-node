@@ -3,12 +3,17 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "build/**", "apps/docs/dist/**", "apps/docs/.next/**", "apps/docs/build/**"]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "outputs": []
     }
-  },
-  "globalDependencies": ["**/.env.*local"]
+  }
 }
